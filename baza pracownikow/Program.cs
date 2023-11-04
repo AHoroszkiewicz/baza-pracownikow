@@ -16,7 +16,7 @@ addEmployeeButton.Click += (s, a) =>
 	var employeeAddingScreen = new ListBox() { X = 0, Y = 0, Width = Console.WindowWidth, Height = Console.WindowHeight };
 	var firstNameTextBox = new TextBox() { X = 1, Y = 1, Width = 20, Label = "First name", Parent = employeeAddingScreen };
 	var lastNameTextBox = new TextBox() { X = 1, Y = 4, Width = 20, Label = "Last name", Parent = employeeAddingScreen };
-	var peselTextBox = new TextBox() { X = 1, Y = 4, Width = 20, Label = "PESEL", Parent = employeeAddingScreen };
+	var peselTextBox = new TextBox() { X = 1, Y = 7, Width = 20, Label = "PESEL", Parent = employeeAddingScreen };
 	var confirmButton = new Button() { X = 1, Y = 10, Width = 8, Label = "Confirm", Parent = employeeAddingScreen };
 	var cancelButton = new Button() { X = 10, Y = 10, Width = 8, Label = "Cancel", Parent = employeeAddingScreen };
 
