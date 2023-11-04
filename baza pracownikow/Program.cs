@@ -26,7 +26,7 @@ addEmployeeButton.Click += (s, a) =>
 		{
 			FirstName = firstNameTextBox.Text,
 			LastName = lastNameTextBox.Text,
-			Pesel = peselTextBox.Text,
+			PESEL = peselTextBox.Text,
 		};
 		employeeRegister.AddItem(employee);
 		currentScreen.CleanUp();
