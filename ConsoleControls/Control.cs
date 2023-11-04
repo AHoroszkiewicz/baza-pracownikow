@@ -34,6 +34,8 @@
         public virtual List<Control> Children { get; set; } 
             = new List<Control>();
 
+        public virtual List<Control> UnfocusableChildren { get; set; } = new List<Control>();
+
         public virtual int FocusedChildIndex { get; set; } = 0;
         public virtual Control? FocusedChild
         {
@@ -60,6 +62,10 @@
         {
             CleanUp();
             foreach (var child in Children)
+            {
+                child.Redraw();
+            }
+            foreach (var child in UnfocusableChildren)
             {
                 child.Redraw();
             }
