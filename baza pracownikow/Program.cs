@@ -1,5 +1,5 @@
-﻿using baza_pracownikow.Models;
-using ConsoleControls;
+﻿using ConsoleControls;
+using baza_pracownikow.Models;
 
 Control mainScreen = new Control() { X = 0, Y = 0, Width = Console.WindowWidth, Height = Console.WindowHeight };
 
